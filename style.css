@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(226, 226, 226);
+    color: #292929;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.healthbar {
+    width: 100%;
+    max-width: 20rem;
+    height: 20px;
+    border-bottom: 2px solid #292929;
+    border-left: 2px solid #292929;
+    border-right: 2px solid #292929;
+    margin: 1rem auto 5rem;
+    padding: 2px;
+    position: relative;
+}
+  
+.healthbar__value {
+    background-color: #791515;
+    width: 100%;
+    height: 100%;
+}
+
+#points {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    margin-right: 0.5rem;
+}
+
+#controls button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto 1rem;
+    position: relative;
+    transition: 0.4s;
+}
+
+.startButton {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: block;
+    margin: 5rem auto;
+}
+
+#log ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 0 20px 0 0; /* Increase/decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
+}
+
+.log--player {
+    color: #e0c2d2;
+}
+
+.log--heal {
+    color: rgb(29, 105, 29);
+}
+
+.log--damage{
+    color: #791515;
+}
+
+.logWrapper {
+    max-height: 30rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 3rem 0;
+}
